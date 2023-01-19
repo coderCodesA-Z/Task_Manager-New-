@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #3D72A4;
+}
+
+header {
+    background-color: #CCC;
+    width: 100vw;
+    height: 11vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 9px solid rgb(98, 86, 86);
+}
+
+ul {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 1.5rem;
+    background-color: #18ba83;
+    padding: 0.4rem;
+    border-radius: 8px;
+}
+
+ul li.task {
+    display: inline-block;
+    list-style: none;
+    width: 11rem;
+    height: 3rem;
+    vertical-align: middle;
+    color: rgb(254, 254, 254);
+    border-radius: 8px;
+    padding: 14px;
+    text-align: center;
+    margin-right: auto;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+ul li.task:hover {
+    box-shadow: 5px 7px 16px 1px #ac7a7a;
+    font-size: large;
+}
+
+ul li.task:active {
+    border: 2px solid white;
+    border-bottom: none;
+    border-right: none;
+    box-shadow: 5px 7px 16px 1px #8b5f5f;
+}
+
+.priority1 {
+    background-color: red;
+}
+
+.priority1:hover {
+    background-color: rgb(206, 0, 0);
+}
+
+.priority1:active {
+    background-color: rgb(170, 5, 5);
+}
+
+.priority2 {
+    background-color: green;
+}
+
+.priority2:hover {
+    background-color: rgb(2, 106, 2);
+}
+
+.priority2:active {
+    background-color: rgb(2, 82, 2);
+}
+
+.priority3 {
+    background-color: blue;
+}
+
+.priority3:hover {
+    background-color: rgb(1, 1, 214);
+}
+
+.priority3:active {
+    background-color: rgb(0, 0, 168);
+}
+
+.priority4 {
+    background-color: cadetblue;
+}
+
+.priority4:hover {
+    background-color: rgb(77, 129, 131);
+}
+
+.priority4:active {
+    background-color: rgb(62, 105, 106);
+}
+
+.buttons {
+    margin-left: auto;
+    margin-right: 3rem;
+    border: 2px solid white;
+    border-left: 6px solid white;
+    border-radius: 8px;
+    outline: 1px solid rgb(88, 83, 83);
+}
+
+button {
+    display: inline-block;
+    vertical-align: middle;
+    width: 5.5rem;
+    height: 2.8rem;
+    font-weight: bolder;
+    margin-left: -4px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    font-size: large;
+    background-color: rgb(94 127 104);
+    color: white;
+}
+
+button:hover {
+    box-shadow: 5px 7px 16px 1px #ac7a7a;
+    font-size: larger;
+    color: rgb(224, 224, 224);
+}
+
+button:active {
+    box-shadow: 5px 7px 16px 1px #8b5f5f;
+    color: white;
+}
+
+button.add {
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+button.remove {
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.modalContainer {
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    margin: 9vh auto;
+    border: 7px solid rgb(98, 89, 89);
+    border-radius: 16px;
+}
+
+.textAreaContainer {
+    width: 70%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #999966;
+    resize: none;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border: none;
+    color: #5d3b3b;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.textAreaContainer:focus-visible {
+    outline: none;
+    border: none;
+}
+
+.priorityColorContainer {
+    width: 30%;
+    height: 100%;
+    background-color: #697e69;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    border-left: 6px solid rgb(104, 63, 63);
+}
+
+.priorityColorContainer>.priorityColor {
+    width: 80%;
+    height: 5rem;
+    text-align: center;
+    padding: 1.8rem;
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+    border-radius: 10px;
+    border: 2px solid black;
+
+}
+
+.priorityColorContainer>.priorityColor:hover {
+    border: none;
+    border-right: 3px solid black;
+    border-bottom: 4px solid black;
+    cursor: pointer;
+    box-shadow: 8px 14px 17px -2px #8b5;
+}
+
+.priorityColorContainer>.priorityColor:active {
+    border: none;
+    border-top: 5px solid black;
+    border-left: 5px solid black;
+    cursor: pointer;
+    box-shadow: 8px 14px 17px -2px rgb(104, 143, 64);
+}
